@@ -5,13 +5,12 @@ def read_chat_log(file_path):
 def write_summary(output_path, summary_data):
     with open(output_path, 'w', encoding='utf-8') as file:
         file.write("AI Chat Log Summary\n")
-        file.write("=" * 50 + "\n\n")
-          # Write basic summary
+        file.write("=" * 50 + "\n\n")          # Write basic summary
         summary = summary_data['summary']
         file.write(f"Total exchanges: {summary['total_exchanges']}\n")
         file.write(f"User messages: {summary['user_messages']}\n")
         file.write(f"AI messages: {summary['ai_messages']}\n")
-        file.write(f"Conversation topics: {summary['nature']}\n\n")
+        file.write(f"Summary: {summary['conversational_summary']}\n\n")
         
         # Write keywords
         keywords = summary_data['keywords']
@@ -88,13 +87,12 @@ def write_batch_summary(output_path, all_summaries):
             file.write(f"File {i}: {summary['file_name']}\n")
             file.write("-" * (len(f"File {i}: {summary['file_name']}")) + "\n")
             file.write(f"Path: {summary['file_path']}\n")
-            
-            # Write individual summary
+              # Write individual summary
             summary_data = summary['summary']
             file.write(f"Total exchanges: {summary_data['total_exchanges']}\n")
             file.write(f"User messages: {summary_data['user_messages']}\n")
             file.write(f"AI messages: {summary_data['ai_messages']}\n")
-            file.write(f"Conversation topics: {summary_data['nature']}\n\n")
+            file.write(f"Summary: {summary_data['conversational_summary']}\n\n")
             
             # Write individual keywords
             keywords = summary['keywords']
