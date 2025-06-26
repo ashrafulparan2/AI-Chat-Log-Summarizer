@@ -1,0 +1,13 @@
+AI Chat Log Summary
+==================================================
+
+Total messages: 8
+User messages: 4
+AI messages: 4
+
+Top 5 most frequently used words:
+  - machine: 3 times
+  - learning: 3 times
+  - what: 2 times
+  - systems: 2 times
+  - common: 2 times
