@@ -1,13 +1,21 @@
 AI Chat Log Summary
 ==================================================
 
-Total messages: 8
+Total exchanges: 8
 User messages: 4
 AI messages: 4
+Conversation topics: machine learning, data science, artificial intelligence
 
-Top 5 most frequently used words:
+Most common keywords (basic analysis):
   - machine: 3 times
   - learning: 3 times
-  - what: 2 times
   - systems: 2 times
   - common: 2 times
+  - applications: 2 times
+
+Keywords by TF-IDF importance:
+  - learning: 0.169
+  - machine: 0.169
+  - machine learning: 0.169
+  - systems: 0.106
+  - applications: 0.102

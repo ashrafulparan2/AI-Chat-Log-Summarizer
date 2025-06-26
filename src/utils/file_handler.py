@@ -7,16 +7,22 @@ def write_summary(output_path, summary_data):
         file.write("AI Chat Log Summary\n")
         file.write("=" * 50 + "\n\n")
         
-        # Write message statistics
+        # Write basic summary
         summary = summary_data['summary']
         file.write(f"Total messages: {summary['total_messages']}\n")
         file.write(f"User messages: {summary['user_messages']}\n")
-        file.write(f"AI messages: {summary['ai_messages']}\n\n")
+        file.write(f"AI messages: {summary['ai_messages']}\n")
+        file.write(f"Conversation topics: {summary['nature']}\n\n")
         
-        # Write top 5 keywords
+        # Write keywords
         keywords = summary_data['keywords']
-        file.write("Top 5 most frequently used words:\n")
-        for word, count in keywords:
+        file.write("Most common keywords (basic analysis):\n")
+        for word, count in keywords['basic_keywords']:
             file.write(f"  - {word}: {count} times\n")
+        
+        if keywords['tfidf_keywords']:
+            file.write("\nKeywords by TF-IDF importance:\n")
+            for word, score in keywords['tfidf_keywords']:
+                file.write(f"  - {word}: {score:.3f}\n")
         
         print(f"Summary written to: {output_path}")
