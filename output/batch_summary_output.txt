@@ -1,0 +1,104 @@
+AI Chat Log Batch Summary
+============================================================
+
+OVERALL STATISTICS
+------------------------------
+Total files processed: 3
+Total exchanges across all files: 28
+Total user messages: 14
+Total AI messages: 14
+
+AGGREGATED KEYWORDS ACROSS ALL FILES
+----------------------------------------
+Most common keywords (basic analysis):
+  - learning: 8 times
+  - machine: 6 times
+  - python: 5 times
+  - data: 4 times
+  - intelligence: 4 times
+  - structures: 3 times
+  - dictionaries: 3 times
+  - human: 3 times
+  - learn: 3 times
+  - systems: 2 times
+
+Keywords by TF-IDF importance (averaged):
+  - ai: 0.319
+  - intelligence: 0.200
+  - python: 0.199
+  - learning: 0.191
+  - data: 0.189
+  - dictionaries: 0.171
+  - machine: 0.152
+  - machine learning: 0.152
+  - data structures: 0.138
+  - structures: 0.138
+
+============================================================
+
+INDIVIDUAL FILE SUMMARIES
+============================================================
+
+File 1: chat.txt
+----------------
+Path: ..\input\chat.txt
+Total exchanges: 8
+User messages: 4
+AI messages: 4
+Conversation topics: machine learning, data science, artificial intelligence
+
+Most common keywords:
+  - machine: 3 times
+  - learning: 3 times
+  - systems: 2 times
+  - common: 2 times
+  - applications: 2 times
+TF-IDF keywords:
+  - learning: 0.164
+  - machine: 0.164
+  - machine learning: 0.164
+  - ask: 0.125
+  - systems: 0.120
+
+File 2: chat2.txt
+-----------------
+Path: ..\input\chat2.txt
+Total exchanges: 10
+User messages: 5
+AI messages: 5
+Conversation topics: programming, data science, artificial intelligence
+
+Most common keywords:
+  - python: 5 times
+  - data: 4 times
+  - structures: 3 times
+  - dictionaries: 3 times
+  - help: 2 times
+TF-IDF keywords:
+  - python: 0.199
+  - data: 0.189
+  - dictionaries: 0.171
+  - data structures: 0.138
+  - structures: 0.138
+
+File 3: chat3.txt
+-----------------
+Path: ..\input\chat3.txt
+Total exchanges: 10
+User messages: 5
+AI messages: 5
+Conversation topics: machine learning, data science, artificial intelligence
+
+Most common keywords:
+  - learning: 5 times
+  - intelligence: 4 times
+  - human: 3 times
+  - learn: 3 times
+  - machine: 3 times
+TF-IDF keywords:
+  - ai: 0.319
+  - learning: 0.218
+  - intelligence: 0.200
+  - machine: 0.140
+  - machine learning: 0.140
+

@@ -1,0 +1,10 @@
+User: What is artificial intelligence?
+AI: Artificial Intelligence (AI) refers to the simulation of human intelligence in machines that are programmed to think and learn like humans.
+User: What are the different types of AI?
+AI: There are three main types: Narrow AI (focused on specific tasks), General AI (human-level intelligence), and Super AI (beyond human capabilities).
+User: Can you give examples of narrow AI?
+AI: Sure! Examples include voice assistants like Siri, recommendation systems on Netflix, image recognition in photo apps, and chatbots like myself.
+User: How does machine learning relate to AI?
+AI: Machine learning is a subset of AI that enables systems to automatically learn and improve from experience without being explicitly programmed for every scenario.
+User: What about deep learning?
+AI: Deep learning is a subset of machine learning that uses neural networks with multiple layers to analyze and learn from large amounts of data.

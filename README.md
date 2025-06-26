@@ -19,9 +19,15 @@ AI-Chat-Log-Summarizer
 │   └── utils
 │       ├── __init__.py       # Marks the utils directory as a package
 │       └── file_handler.py    # Utility functions for file handling
-├── data
-│   ├── sample_chat.txt       # Sample chat log for testing and demonstration
-│   └── summary_output.txt    # Generated summary output file
+├── input
+│   ├── chat.txt              # Sample chat log files for processing
+│   ├── chat2.txt             # Additional sample chat log
+│   ├── chat3.txt             # Additional sample chat log
+│   └── README.md             # Input directory documentation
+├── output
+│   ├── summary_output.txt    # Generated summary for single file processing
+│   ├── batch_summary_output.txt # Generated summary for batch processing
+│   └── README.md             # Output directory documentation
 ├── requirements.txt          # Lists project dependencies
 ├── .gitignore                # Specifies files to ignore in version control
 └── README.md                 # Project documentation
@@ -43,10 +49,24 @@ AI-Chat-Log-Summarizer
 
 ## Usage
 To run the application, execute the following command:
+
+### Process all files in the input directory (default):
+```
+python src/main.py
+```
+
+### Process a specific file or directory:
 ```
 python src/main.py <path_to_chat_log>
 ```
 Replace `<path_to_chat_log>` with the path to your chat log files.
+
+### Input Files
+Place your chat log files (`.txt`, `.log`, or `.chat` extensions) in the `input/` directory. The application will automatically process all supported files.
+
+### Output Files
+- Single file processing: Results saved to `output/summary_output.txt`
+- Multiple files processing: Results saved to `output/batch_summary_output.txt`
 
 ## Example
 After running the application, you will receive a summary of the chat log, including message counts and frequently used keywords.
